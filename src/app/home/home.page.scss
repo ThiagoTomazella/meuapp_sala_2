@@ -25,3 +25,21 @@
 #container a {
   text-decoration: none;
 }
+
+.animated-button {
+  // Tamanho inicial (quadrado)
+  width: 50px; 
+  height: 50px;
+  
+  // Transição lenta (slow transition)
+  transition: width 0.5s ease-in-out; 
+  
+  // Centraliza o ícone
+  --padding-start: 0;
+  --padding-end: 0;
+
+  &.expanded {
+    // Tamanho quando expandido
+    width: 100%; 
+  }
+}
